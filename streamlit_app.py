@@ -64,7 +64,6 @@ n_movies=int(st.slider("How many movies do you want to see?", min_value=1, max_v
 
 from pprint import pprint
 
-from pprint import pprint
 
 def recommender_system(user_id, n_similar_users, n_movies): #, user_to_movie_df, knn_model):
   
@@ -120,7 +119,10 @@ def recommender_system(user_id, n_similar_users, n_movies): #, user_to_movie_df,
   print("")
   filtered_movie_recommendations(n_movies)
 
-recommender_system(user_id,10,n_movies)
+with st.spinner('Syncing changes...'):
+    recommender_system(user_id,10,n_movies)
+st.success('Done!')
+
 ok1 = st.button("See top recommended movies")
 if ok1:
     with st.container():
