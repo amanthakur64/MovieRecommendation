@@ -10,7 +10,7 @@ import time
 
 global_final_movie_list = []
 
-st.set_page_config(page_title="Movie Reccomendation system", page_icon="movie",layout="centered")
+st.set_page_config(page_title="Movie Reccomendation system", page_icon="movie_camera",layout="centered")
 
 
 with open('saved_model.pkl', 'rb') as file:
