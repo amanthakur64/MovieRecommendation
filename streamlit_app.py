@@ -58,7 +58,7 @@ with st.container():
 
 st.write("---")
 
-user_id=int(st.number_input("Enter UserID",key="user_id",min_value=0))
+user_id=int(st.number_input("Enter UserID",key="user_id",min_value=0,max_value=609))
 st.write("##")
 n_movies=int(st.slider("How many movies do you want to see?", min_value=1, max_value=10, value=2,key="n_movies"))
 
