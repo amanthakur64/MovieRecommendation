@@ -121,7 +121,7 @@ def recommender_system(user_id, n_similar_users, n_movies): #, user_to_movie_df,
 
 with st.spinner('Syncing changes...'):
     recommender_system(user_id,10,n_movies)
-st.success('Done!')
+st.success('Synced with server!')
 
 ok1 = st.button("See top recommended movies")
 if ok1:
